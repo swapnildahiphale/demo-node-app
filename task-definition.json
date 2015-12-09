@@ -1,0 +1,18 @@
+{
+    "family": "demo-node-app",
+    "containerDefinitions": [
+        {
+            "image": "swapnildahiphale/demo-node-app:v_%BUILD_NUMBER%",
+            "name": "demo-node-app",
+            "cpu": 100,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 80
+                }
+            ]
+        }
+    ]
+}
