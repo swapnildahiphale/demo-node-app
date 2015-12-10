@@ -7,7 +7,7 @@ http.createServer(function (request, response) {
    response.write("\n\n This page is viewd  " + counter +" times.");
    response.write('\n\n Hostname from where app is being served is : ' + hostname );
 
-   response.write("\n\n The version is : V4 is cool");
+   response.write("\n\n The version is : V1");
    response.end();
    if(request.url == "/")
    	 counter = counter + 1;
