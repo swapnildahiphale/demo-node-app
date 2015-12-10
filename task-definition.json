@@ -6,7 +6,13 @@
             "name": "demo-node-app",
             "cpu": 100,
             "memory": 256,
-            "essential": true
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 80
+                }
+            ]
         }
     ]
 }
